@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0b0d">
+  <title>Shyam Garments — Premium Men's Wear</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-orb orb-one"></div><div class="bg-orb orb-two"></div>
+
+  <header class="glass nav">
+    <a class="brand" href="#">
+      <div class="logo-placeholder">SG</div>
+      <div><strong>SHYAM</strong><span>GARMENTS</span></div>
+    </a>
+    <nav>
+      <a href="#shop">Shop</a><a href="#collections">Collections</a><a href="#about">About</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-btn" id="cartBtn">Bag <b id="cartCount">0</b></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">SHYAM GARMENTS • KAIMGANJ</p>
+        <h1>Dress sharp.<br><span>Stay effortless.</span></h1>
+        <p class="hero-text">Premium men's wear curated for everyday confidence—from clean basics to statement pieces.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#shop">Explore Collection <span>↗</span></a>
+          <a class="btn glass-btn" href="#contact">Visit Store</a>
+        </div>
+      </div>
+      <div class="hero-card glass">
+        <div class="hero-card-top"><span>NEW SEASON</span><span>01 / 06</span></div>
+        <div class="fashion-placeholder">
+          <div class="silhouette">SG</div>
+          <small>YOUR PRODUCT IMAGE</small>
+        </div>
+        <div class="hero-card-bottom"><strong>Modern Men's Edit</strong><span>Premium • Clean • Timeless</span></div>
+      </div>
+    </section>
+
+    <section class="marquee glass"><span>SHIRTS</span><i>✦</i><span>T-SHIRTS</span><i>✦</i><span>JEANS</span><i>✦</i><span>LOWERS</span><i>✦</i><span>JACKETS</span><i>✦</i><span>FORMAL WEAR</span></section>
+
+    <section id="collections" class="section">
+      <div class="section-head"><div><p class="eyebrow">CURATED FOR YOU</p><h2>Shop by category</h2></div></div>
+      <div class="categories">
+        <button data-cat="Shirts">Shirts <span>→</span></button>
+        <button data-cat="T-Shirts">T-Shirts <span>→</span></button>
+        <button data-cat="Jeans">Jeans <span>→</span></button>
+        <button data-cat="Trousers">Trousers <span>→</span></button>
+        <button data-cat="Lowers">Lowers <span>→</span></button>
+        <button data-cat="Jackets">Jackets <span>→</span></button>
+        <button data-cat="Formal Wear">Formal Wear <span>→</span></button>
+        <button data-cat="All Products">All Products <span>→</span></button>
+      </div>
+    </section>
+
+    <section id="shop" class="section">
+      <div class="section-head products-head">
+        <div><p class="eyebrow">THE COLLECTION</p><h2>Featured pieces</h2></div>
+        <div class="filters" id="filters">
+          <button class="active" data-cat="All Products">All</button><button data-cat="Shirts">Shirts</button>
+          <button data-cat="T-Shirts">T-Shirts</button><button data-cat="Jeans">Jeans</button>
+          <button data-cat="Lowers">Lowers</button><button data-cat="Jackets">Jackets</button>
+        </div>
+      </div>
+      <div class="products" id="products"></div>
+    </section>
+
+    <section id="about" class="about glass section">
+      <div><p class="eyebrow">THE SHYAM STANDARD</p><h2>Premium style,<br>without the noise.</h2></div>
+      <p>Shyam Garments brings modern men's fashion to Kaimganj with a focus on clean silhouettes, wearable colours and quality you can feel. Explore online, then order directly through WhatsApp or visit our store.</p>
+    </section>
+
+    <section id="contact" class="contact section">
+      <div><p class="eyebrow">COME SAY HELLO</p><h2>Visit Shyam Garments.</h2>
+      <p>Railway Road, Kaimganj, Farrukhabad, Uttar Pradesh, India — 209502</p></div>
+      <div class="contact-cards">
+        <a class="glass contact-card" href="tel:7232968722"><small>CALL</small><strong>7232968722</strong><span>→</span></a>
+        <a class="glass contact-card" href="https://wa.me/917232968722" target="_blank"><small>WHATSAPP</small><strong>Order on WhatsApp</strong><span>→</span></a>
+        <a class="glass contact-card" href="https://instagram.com/shyam_garments_77" target="_blank"><small>INSTAGRAM</small><strong>@shyam_garments_77</strong><span>→</span></a>
+      </div>
+    </section>
+  </main>
+
+  <footer><strong>SHYAM GARMENTS</strong><span>Premium Men's Wear • Kaimganj</span></footer>
+
+  <div class="cart-overlay" id="overlay"></div>
+  <aside class="cart glass" id="cart">
+    <div class="cart-head"><h3>Your Bag</h3><button id="closeCart">×</button></div>
+    <div id="cartItems" class="cart-items"><div class="empty">Your bag is empty.</div></div>
+    <div class="cart-foot"><div><span>Total</span><strong id="cartTotal">₹0</strong></div><button class="btn primary" id="orderBtn">Order on WhatsApp</button></div>
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+</html>
